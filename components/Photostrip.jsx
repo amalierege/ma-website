@@ -7,7 +7,7 @@ export function Photostrip({ images }) {
         // Når vi looper over lister, kan vi alle hente ut indeksen til elementet vi er på med en variabel som heter index
         return (
           <Image
-            alt="Bilde av meg"
+            alt="Photos of my projects"
             key={index}
             src={image}
             width={405}

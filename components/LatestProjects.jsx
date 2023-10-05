@@ -4,10 +4,18 @@ import Image from "next/image";
 // Her definerer hvilke prosjekter vi vil vise nedenfor.
 const latestProjects = [
   {
-    title: "Overskrift",
+    title: "Make Your Own Website",
     description:
-      "Kort forklaring av hva prosjektet omhandlet, eventuelt hvem det var for.",
-    image: "/design-sprint.jpg",
+      "Stacc WorkShop 2023",
+    image: "/cat.jpg",
+    href: "/prosjekter/tilfeldig-prosjekt",
+  },
+
+  {
+    title: "Cry",
+    description:
+      "Every day",
+    image: "/cat.jpg",
     href: "/prosjekter/tilfeldig-prosjekt",
   },
 ];
@@ -16,7 +24,7 @@ export function LatestProjects() {
   return (
     <div className="flex flex-col gap-5">
       <div className="flex flex-col gap-3">
-        <h2 className="text-xl">Siste prosjekter</h2>
+        <h2 className="text-xl">My Projects</h2>
         {latestProjects.map((project) => (
           // Vi går over alle prosjektene vi har definert over og lager en ProjectPreview for hvert av dem.
           // Når du looper over noe i React må du gi det en unik key. Her bruker vi tittelen som key.
@@ -29,7 +37,7 @@ export function LatestProjects() {
         className="text-secondary-700 font-bold hover:underline"
         href="/prosjekter"
       >
-        Se alle mine prosjekter
+        View All Projects
       </Link>
     </div>
   );
